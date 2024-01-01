@@ -1,0 +1,11 @@
+### Primer design ###
+
+# Accession numbers
+OK555092
+NM_001401748
+
+Forward Primer: CTGGAGAGCTAGCAGAAACAAA
+Reverse Primer: GCCCAACGACAACAGAAGA
+
+Forward RE Primer: ATCCGAATTCCTGGAGAGCTAGCAG
+Reverse RE Primer: ATACTAAGCTTGCCCAACGACAACAGA 
