@@ -21,7 +21,7 @@ KYFGDFEKRIPREEMLQMQDIVLNEVKKVDSEYIATVCGSFRRGAESSGDMDVLLTHPSFTSESTKQPKL
 LHQVVEQLQKVHFITDTLSKGETKFMGVCQLPSKNDEKEYPHRRIDIRLIPKDQYYCGVLYFTGSDIFNK
 NMRAHALEKGFTINEYTIRPLGVTGVAGEPLPVDSEKDIFDYIQWKYREPKDRSE
 
->unknown3
+>unknown3 NM_001824.5
 TGTCACCTCCAGGATACAGACAGCCCCCCTTCAGCCCAGCCCAGCCAGGTCTCCTACACCGCC
 ACCATGCCATTCGGTAACACCCACAACAAGTTCAAGCTGAATTACAAGCCTGAGGAGGAGTACCCCGACC
 TCAGCAAACATAACAACCACATGGCCAAGGTACTGACCCTTGAACTCTACAAGAAGCTGCGGGACAAGGA
@@ -46,20 +46,35 @@ GATTCTGGCCAATGAAATATCTCCCTGGCAGGGTCCTCTTCTTTTCCCAGAGCTCCACCCCAACCAGGAG
 CTCTAGTTAATGGAGAGCTCCCAGCACACTCGGAGCTTGTGCTTTGTCTCCACGCAAAGCGATAAATAAA
 AGCATTGGTGG
  
-## Results
+### Results ###
+## Different database type
 # Run = megablast + core_nt
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV8HU7TE013
-# Run = megablast + core_nt + Exclude Models and Uncultured
+# Run = megablast + core_nt + Exclude
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV8N5UZE016
-# Run = megablast + refseq_rna + Exclude Models and Uncultured
+# Run = megablast + refseq_rna + Exclude
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV8GAR3E016
-# Run = megablast + refseq_rna + Exclude Models and Uncultured + organism "human"
+
+## Find Paralogs in human
+# Run = megablast + refseq_rna + Exclude + organism "human"
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV9HNN6M016
-# Run = blastn + refseq_rna + Exclude Models and Uncultured + organism "human"
+# Run = blastn + refseq_rna + Exclude + organism "human"
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV9WZ89R013
 
+## Find orthologs in other
+# Run = megablast + refseq_rna + Exclude + organism ("human", "fruit fly", "cat")
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVAJHDA4013
+# Run = blastn + refseq_rna + Exclude + organism ("human", "fruit fly", "cat")
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVCZ7CW9016
+# Run = megablast + refseq_rna + Model (XM/XP) + Exclude + organism ("human", "fruit fly", "cat")
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVD4NPF6013
+
+## Find orthologs in mammalian
+# Run = megablast + refseq_rna + Exclude + organism "Mammalia" 
+
+
+
 ## Accession Number for Workshop
-NM_001824.5
 NP_001815.2
 
 ## Exercise
