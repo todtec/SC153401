@@ -45,6 +45,18 @@ GGGGGCTCTCTCCACCCTTCTCAGAGTTCCAGTTTCAACCAGAGTTCCAACCAATGGGCTCCATCCTCTG
 GATTCTGGCCAATGAAATATCTCCCTGGCAGGGTCCTCTTCTTTTCCCAGAGCTCCACCCCAACCAGGAG
 CTCTAGTTAATGGAGAGCTCCCAGCACACTCGGAGCTTGTGCTTTGTCTCCACGCAAAGCGATAAATAAA
 AGCATTGGTGG
+ 
+## Results
+# Run = megablast + core_nt
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV8HU7TE013
+# Run = megablast + core_nt + Exclude Models and Uncultured
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV8N5UZE016
+# Run = megablast + refseq_rna + Exclude Models and Uncultured
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV8GAR3E016
+# Run = megablast + refseq_rna + Exclude Models and Uncultured + organism "human"
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV9HNN6M016
+# Run = blastn + refseq_rna + Exclude Models and Uncultured + organism "human"
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV9WZ89R013
 
 ## Accession Number for Workshop
 NM_001824.5
