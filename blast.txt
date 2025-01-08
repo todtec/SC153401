@@ -97,13 +97,21 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVFMJ13T016
 # Run = tblatn + Model (XM/XP) + gray whales genome
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVFYE246016
 
+####################
+### Case study 3 ###
+####################
+### Studying the evolution of human creatine kinase in mammalian ###
+# Use protein: NP_001815.2 = human creatine kinase
+# Use blastp to get some close creatine kinase in other species
+# Run blastp + refseq_protein + Exclude
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVGE2CXS013
 
-
-
-### Accession Number for Workshop ###
+##########################################
+### NCBI Accession Number for Workshop ###
+##########################################
 NM_001824.5
 NP_001815.2
 
-## Exercise
+## Exercise ##
 1. Entrez: wolffia[organism] AND chloroplast[title]
 2. Evolutionary relationship: NP_000509.1
