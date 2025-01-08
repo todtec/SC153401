@@ -1,6 +1,12 @@
-## For ENTREZ searching
+#############################
+### Entrez search systems ###
+#############################
+### Example of ENTREZ searching ###
 human[organism] AND mitochondrion[title]
-## Unknown sequence
+
+###############################
+### sequence identification ###
+###############################
 >Unknown1
 TTTGCCCCCAGCTGCGAGCAGGGACAGGTCTGGCCACCGGGCCCCTGGTTAAGACTCTAATAACCCGCTG
 GCCCTGAGGAAGAGGTGCTGACGACCAAGGAGATCTTCCCACAGACCCAGCACCAGGGAAATGGTCCGGA
@@ -13,7 +19,6 @@ ACGAGGCTTCTTCTACACACCCAAGACCCGCCGGGAGGCAGAGGACCTGCAGGTGGGGCAGGTGGAGCTG
 GGCGGGGGCCCTGGTGCAGGCAGCCTGCAGCCCTTGGCCCTGGAGGGGTCCCTGCAGAAGCGTGGCATCG
 TGGAACAGTGCTGTACCAGCATCTGCTCCCTCTACCAGCTGGAGAACTACTGCAACTAGATGCAGCCCGC
 AGGCAGCCCCACACCCTCCGCCTCCTGCACCGAGAGACATGGAATAAAGCCCCTGAACCAGC
-
 >Unknown2
 MSKRKAPQETLNGGITDMLTELANFEKNVSQAIHKYNAYRKAASVIAKYPHKIKSGAEAKKLPGVGTKIA
 EKIDEFLATGKLRKLEKIRQDDTSSSINFLTRVSGIGPSAARKFVDEGIKTLEDLRKNEDKLNHHQRIGL
@@ -21,7 +26,10 @@ KYFGDFEKRIPREEMLQMQDIVLNEVKKVDSEYIATVCGSFRRGAESSGDMDVLLTHPSFTSESTKQPKL
 LHQVVEQLQKVHFITDTLSKGETKFMGVCQLPSKNDEKEYPHRRIDIRLIPKDQYYCGVLYFTGSDIFNK
 NMRAHALEKGFTINEYTIRPLGVTGVAGEPLPVDSEKDIFDYIQWKYREPKDRSE
 
->unknown3 NM_001824.5
+####################
+### Case study 1 ###
+####################
+>unknown3
 TGTCACCTCCAGGATACAGACAGCCCCCCTTCAGCCCAGCCCAGCCAGGTCTCCTACACCGCC
 ACCATGCCATTCGGTAACACCCACAACAAGTTCAAGCTGAATTACAAGCCTGAGGAGGAGTACCCCGACC
 TCAGCAAACATAACAACCACATGGCCAAGGTACTGACCCTTGAACTCTACAAGAAGCTGCGGGACAAGGA
@@ -61,7 +69,7 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV9HNN6M016
 # Run = blastn + refseq_rna + Exclude + organism "human"
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV9WZ89R013
 
-## Find orthologs in other
+## Find orthologs in "fruit fly" and "cat"
 # Run = megablast + refseq_rna + Exclude + organism ("human", "fruit fly", "cat")
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVAJHDA4013
 # Run = blastn + refseq_rna + Exclude + organism ("human", "fruit fly", "cat")
@@ -70,11 +78,30 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVCZ7CW9016
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVD4NPF6013
 
 ## Find orthologs in mammalian
-# Run = megablast + refseq_rna + Exclude + organism "Mammalia" 
+# Run = megablast + refseq_rna + Model (XM/XP) + Exclude + organism "Mammalia" 
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVDT2HSG016
+
+####################
+### Case study 2 ###
+####################
+## Find interesting gene in unannotated genome ##
+## Question: Is human creatine kinase present in gray whales? ##
+# Tool = BLAST Genomes
+# Use mRNA: NM_001824.5 = human creatine kinase
+# Run = blatn megablast + Model (XM/XP) + gray whales genome
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVFCZFJR016
+# Run = blatn blastn + Model (XM/XP) + gray whales genome
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVFMJ13T016
+
+# Use protein: NP_001815.2 = human creatine kinase
+# Run = tblatn + Model (XM/XP) + gray whales genome
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVFYE246016
 
 
 
-## Accession Number for Workshop
+
+### Accession Number for Workshop ###
+NM_001824.5
 NP_001815.2
 
 ## Exercise
