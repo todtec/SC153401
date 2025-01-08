@@ -105,6 +105,8 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVFYE246016
 # Use blastp to get some close creatine kinase in other species
 # Run blastp + refseq_protein + Exclude
 https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVGE2CXS013
+# Run blastp + refseq_protein + Model (XM/XP) + Exclude
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVGMUWJY013
 
 ##########################################
 ### NCBI Accession Number for Workshop ###
