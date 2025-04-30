@@ -79,8 +79,8 @@ Run = megablast + refseq_rna + Model (XM/XP) + Exclude + organism "Mammalia"
 ## Question: Is human creatine kinase present in gray whales? ##
 # Tool = BLAST Genomes
 # Use mRNA: NM_001824.5 = human creatine kinase
-Run = blatn megablast + Model (XM/XP) + gray whales genome
-Run = blatn blastn + Model (XM/XP) + gray whales genome
+Run = megablast + Model (XM/XP) + gray whales genome
+Run = blastn + Model (XM/XP) + gray whales genome
 
 
 # Use protein: NP_001815.2 = human creatine kinase
