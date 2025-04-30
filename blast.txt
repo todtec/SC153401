@@ -56,30 +56,21 @@ AGCATTGGTGG
  
 ### Results ###
 ## Different database type
-# Run = megablast + core_nt
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV8HU7TE013
-# Run = megablast + core_nt + Exclude
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV8N5UZE016
-# Run = megablast + refseq_rna + Exclude
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV8GAR3E016
+Run = megablast + core_nt
+Run = megablast + core_nt + Exclude
+Run = megablast + refseq_rna + Exclude
 
 ## Find Paralogs in human
-# Run = megablast + refseq_rna + Exclude + organism "human"
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV9HNN6M016
-# Run = blastn + refseq_rna + Exclude + organism "human"
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RV9WZ89R013
+Run = megablast + refseq_rna + Exclude + organism "human"
+Run = blastn + refseq_rna + Exclude + organism "human"
 
 ## Find orthologs in "fruit fly" and "cat"
-# Run = megablast + refseq_rna + Exclude + organism ("human", "fruit fly", "cat")
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVAJHDA4013
-# Run = blastn + refseq_rna + Exclude + organism ("human", "fruit fly", "cat")
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVCZ7CW9016
-# Run = megablast + refseq_rna + Model (XM/XP) + Exclude + organism ("human", "fruit fly", "cat")
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVD4NPF6013
+Run = megablast + refseq_rna + Exclude + organism ("human", "fruit fly", "cat")
+Run = blastn + refseq_rna + Exclude + organism ("human", "fruit fly", "cat")
+Run = megablast + refseq_rna + Model (XM/XP) + Exclude + organism ("human", "fruit fly", "cat")
 
 ## Find orthologs in mammalian
-# Run = megablast + refseq_rna + Model (XM/XP) + Exclude + organism "Mammalia" 
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVDT2HSG016
+Run = megablast + refseq_rna + Model (XM/XP) + Exclude + organism "Mammalia" 
 
 ####################
 ### Case study 2 ###
@@ -88,14 +79,12 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVDT2HSG016
 ## Question: Is human creatine kinase present in gray whales? ##
 # Tool = BLAST Genomes
 # Use mRNA: NM_001824.5 = human creatine kinase
-# Run = blatn megablast + Model (XM/XP) + gray whales genome
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVFCZFJR016
-# Run = blatn blastn + Model (XM/XP) + gray whales genome
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVFMJ13T016
+Run = blatn megablast + Model (XM/XP) + gray whales genome
+Run = blatn blastn + Model (XM/XP) + gray whales genome
+
 
 # Use protein: NP_001815.2 = human creatine kinase
-# Run = tblatn + Model (XM/XP) + gray whales genome
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVFYE246016
+Run = tblatn + Model (XM/XP) + gray whales genome
 
 ####################
 ### Case study 3 ###
@@ -103,10 +92,8 @@ https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVFYE246016
 ### Studying the evolution of human creatine kinase in mammalian ###
 # Use protein: NP_001815.2 = human creatine kinase
 # Use blastp to get some close creatine kinase in other species
-# Run blastp + refseq_protein + Exclude
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVGE2CXS013
-# Run blastp + refseq_protein + Model (XM/XP) + Exclude
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=RVGMUWJY013
+Run blastp + refseq_protein + Exclude
+Run blastp + refseq_protein + Model (XM/XP) + Exclude
 
 ##########################################
 ### NCBI Accession Number for Workshop ###
