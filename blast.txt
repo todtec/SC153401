@@ -67,7 +67,8 @@ Run = blastn + refseq_rna + Exclude + organism "human"
 ## Find orthologs in "fruit fly" and "cat"
 Run = megablast + refseq_rna + Exclude + organism ("human", "fruit fly", "cat")
 Run = blastn + refseq_rna + Exclude + organism ("human", "fruit fly", "cat")
-Run = megablast + refseq_rna + Model (XM/XP) + Exclude + organism ("human", "fruit fly", "cat")
+Run = megablast + refseq_rna + Model (XM/XP) + organism ("human", "fruit fly", "cat")
+Run = blastn + refseq_rna + Model (XM/XP) + organism ("human", "fruit fly", "cat")
 
 ## Find orthologs in mammalian
 Run = megablast + refseq_rna + Model (XM/XP) + Exclude + organism "Mammalia" 
@@ -93,7 +94,7 @@ Run = tblatn + Model (XM/XP) + gray whales genome
 # Use protein: NP_001815.2 = human creatine kinase
 # Use blastp to get some close creatine kinase in other species
 Run blastp + refseq_protein + Exclude
-Run blastp + refseq_protein + Model (XM/XP) + Exclude
+Run blastp + refseq_protein + Model (XM/XP)
 
 ##########################################
 ### NCBI Accession Number for Workshop ###
